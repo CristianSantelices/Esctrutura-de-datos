@@ -1,0 +1,28 @@
+body{
+    background-color:aquamarine;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    color:crimson;
+}
+
+h2{
+    color:forestgreen;
+}
+p{
+    color:darkslategray;
+    font-size: 20px;
+}
+td{
+    color:cornsilk;
+    background-color:darkcyan;
+}
+input{
+    background-color:cornflowerblue ;
+}
+li{
+    font-size: 20px;
+}
+.texto{
+    font-weight: bold;
+}

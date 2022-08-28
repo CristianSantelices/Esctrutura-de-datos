@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea de Estructura de datos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <h1 style = "text-align: center;">Calorias en las personas</h1>
+    <hr>
+    <h2 style = "text-align: center;">¿Una persona que no es deportista quema calorias?</h2>
+    <hr>
+    <div style = "text-align: center;">
+        <img    src = "img/calor.jpg"/>
+    </div>
+    <p style = "text-align: center;"> Preguntarnos sobre como va nuestro peso,
+        o si deberiamos cambiar nuestro estilo de vida suele ser una de las preguntas mas 
+        frecuentes que tenemos en nuestras semanas o en esos gustos gastronomicos "culposos"
+        que de vez en cuando tenemos. <br> En este pequeño espacio del internet
+        se tratara muy brevemente sobre las calorias que el ser humano aun estando en resposo es capaz de quemar, <br>
+        <span class = "texto" >La siguiente calculadora te dará un aproximado del total de calorias por día que estas quemando. Pruebala.</span>
+        
+         </p>
+    
+    <form action="">
+        <table border = "20" align ="center">
+                <tr>
+                    <td>
+                        Ingresa estatura en cm: 
+                        <input type="number" name="a" id="a"> </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ingresa peso en kilos: 
+                        <input type="number" name="e" id="e"> </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ingresa edad: 
+                        <input type="number" name="i" id="i"> </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value = "Pulsa para calcular" onclick="calculo()"> </td>
+                </tr>
+        </table>
+    </form>
+
+    <script>
+        function calculo(){
+            let num1 = parseInt(document.getElementById("a").value);
+            let num2 = parseInt(document.getElementById("e").value);
+            let num3 = parseInt(document.getElementById("i").value);
+            let cal = ((num1 *6.25) + (num2*10)-(num3*5))-161; 
+            alert("En un dia normal y en reposo quemaste: " + cal +" calorias");
+        }   
+    </script>
+    
+    <p style = "text-align: center;">Se estima que podemos quemar entre 0,9 y 1,02 Kcal por kilo de nuestro peso por hora.<br>
+        Esto no es exacto ya que cada persona tiene una constitución diferente, pero con esta calculadora te puedes llegar a un aproximado de calorias quemadas diaramente.
+         </p>
+         <hr>
+    <h2 style = "text-align: center;"> Consejos para una buena salud. </h2>
+    <p style = "text-align: center;">Como ya es un hecho los organos del ser humanos pueden llegar a ser muy inteligentes y hacer su trabajo muy bien, como es el hecho de botar las cosas que hacen daño como en el caso de las calorias<br>
+        pero por esto no signfica que siempre lo harán porque llegará un punto en el cúal no podrán con el exceso, <br>
+        y llegaran las enfermedades es por eso que nuestro cuerpo de ser cuidado.Hábitos que no se deben de perder:
+         </p>
+
+    <ul style = "text-align: center;" >
+        <ul >
+        <li> Dormir horas completas </li>
+        <li> Comer despacio </li>
+        <li> Mantenerte hidratado </li>
+        <li> Caminar </li>
+        <li> No beber, ni fumar constantemente </li>
+        <li> Visitas a tu doctor</li>
+
+    </ul>
+
+</body>
+</html>
